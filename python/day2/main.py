@@ -1,19 +1,16 @@
 import re
 
-"""
-    Not super proud of the part 2 solution due to the many nested for() loops.
-"""
 
 filename = "input.txt"
-input = []
+
 
 with open(filename) as file:
-    input = [line.strip() for line in file.readlines()]
+    grid = [line.strip() for line in file.readlines()]
 
 
 def part1():
     safe = 0
-    for line in input:
+    for line in grid:
         elements =re.split(r'\s+', line)
         print(elements)
         flag = 0
@@ -44,7 +41,7 @@ def part1():
 
 def part2():
     safe = 0
-    for line in input:
+    for line in grid:
         elements =re.split(r'\s+', line)
         print(elements)
         check = 1

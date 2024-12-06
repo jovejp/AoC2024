@@ -1,9 +1,3 @@
-import re
-
-"""
-    Not super proud of the part 2 solution due to the many nested for() loops.
-"""
-
 grid = []
 result = []
 found_positions = []
