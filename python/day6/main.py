@@ -38,9 +38,6 @@ def simc_move(start_point, start_direction):
 
         else:
             visited_place[(x, y)] = 1
-        # check_block = check_moved(x, y, curr_direction, sx, sy)
-        # if check_block == 1:
-        #     block_place[0] += check_block
         if x + m1 < 0 or x + m1 >= rows or y + m2 < 0 or y + m2 >= cols:
             return
         elif grid[x + m1][y + m2] == '#':
