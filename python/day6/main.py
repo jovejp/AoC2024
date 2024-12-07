@@ -1,6 +1,6 @@
 import re
-filename = "input.txt"
-# filename = "sample.txt"
+# filename = "input.txt"
+filename = "sample.txt"
 with open(filename) as file:
     grid = [list(line.strip()) for line in file.readlines()]
 rows, cols = len(grid), len(grid[0])
