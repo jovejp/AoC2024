@@ -58,6 +58,12 @@ def part1():
 def simc2(group):
     # matrix-inverse
     # reference here for matrix inverse => https://www.shuxuele.com/algebra/matrix-inverse.html
+    # A = [a0 a1]
+    #     [b0 b1]
+    # =》
+    # debt = a0 * b1 - a1 * b0
+    # A^-1 = 1/det * [b1 -a1]
+    #                [-b0 a0]
     result = {}
     a0, a1 = group['A']
     b0, b1 = group['B']
